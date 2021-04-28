@@ -1,0 +1,23 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1597002973885-8c90683fa6e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1vdmllc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);">
+  <div class="container">
+    <h1>Create your movie List now</h1>
+    <p>This really has no use but fuck it</p>
+  </div>
+</div>
+
+<div class="my-lists">
+  <div class="my-list-text">
+    <h3>My Lists</h3>
+    <%= link_to "Create a movie list", new_list_path, class: "create-list-link" %>
+  </div>
+  <div class="my-list-options">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list.id), class: "list-link" do %>
+        <div class="grid-item">
+          <h4><%= list.name %></h4>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>

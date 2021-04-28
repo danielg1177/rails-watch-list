@@ -1,0 +1,43 @@
+.my-list-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-lists {
+  width: 800px;
+  margin: 40px auto;
+}
+
+.my-list-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  width: 250px;
+  height: 150px;
+  text-shadow: 1px 1px 1px gray;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW92aWVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+}
+
+.grid-item h4 {
+  font-size: 30px;
+}
