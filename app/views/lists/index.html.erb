@@ -12,8 +12,8 @@
   </div>
   <div class="my-list-options">
     <% @lists.each do |list| %>
-      <%= link_to list_path(list.id), class: "list-link" do %>
-        <div class="grid-item">
+      <%= link_to list_path(list.id), class: "list-link"  do %>
+        <div class="grid-item" style="background-image: url( <%= cl_image_path list.photo.key %> )">
           <h4><%= list.name %></h4>
         </div>
       <% end %>
